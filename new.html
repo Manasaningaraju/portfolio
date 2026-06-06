@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manasa A N | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f7fa;
+    color:#333;
+}
+
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    background:white;
+    box-shadow:0 2px 15px rgba(0,0,0,0.1);
+    z-index:1000;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+    padding:20px;
+}
+
+nav ul li{
+    margin:0 20px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#333;
+    font-weight:600;
+}
+
+nav ul li a:hover{
+    color:#6c63ff;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    color:white;
+    padding:20px;
+}
+
+.hero-content h1{
+    font-size:4rem;
+}
+
+.hero-content h2{
+    font-weight:300;
+    margin:15px 0;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 30px;
+    background:white;
+    color:#667eea;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+}
+
+section{
+    padding:80px 10%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.5rem;
+    color:#667eea;
+    margin-bottom:40px;
+}
+
+.about{
+    text-align:center;
+}
+
+.about img{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:20px;
+    border:5px solid #667eea;
+}
+
+.education-card,
+.project-card,
+.cert-card,
+.skill-card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:.3s;
+}
+
+.education-card:hover,
+.project-card:hover,
+.cert-card:hover,
+.skill-card:hover{
+    transform:translateY(-10px);
+}
+
+.skills-grid,
+.project-grid,
+.cert-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    margin:10px;
+    font-size:18px;
+}
+
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+
+.hero-content h1{
+    font-size:2.5rem;
+}
+
+.section-title{
+    font-size:2rem;
+}
+
+nav ul{
+    flex-wrap:wrap;
+}
+}
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#certifications">Certificates</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+<div class="hero-content">
+<h1>Manasa A N</h1>
+<h2>Computer Science Student | Python Developer | Django Developer</h2>
+<p>Passionate about creating innovative web applications and solving real-world problems through technology.</p>
+<a href="https://1drv.ms/b/c/2ba8688517525ab7/IQAv-G166rutQ6sMJ6XzQJw6AX5mrLZsCRO1j28np18Z1ck?e=xXriF8" download class="btn">Download Resume</a>
+</div>
+</section>
+
+<!-- About -->
+<section id="about">
+<h2 class="section-title">About Me</h2>
+
+<div class="about">
+<img src="WhatsApp Image 2026-06-01 at 4.19.04 PM.jpeg" alt="Profile">
+
+<p>
+I am a Computer Science student with strong knowledge in Python, Django,
+Java, HTML, CSS, JavaScript, and MySQL. I enjoy developing modern web
+applications and learning new technologies. My goal is to become a
+successful software developer and contribute to innovative projects.
+</p>
+</div>
+</section>
+
+<!-- Education -->
+<section id="education">
+<h2 class="section-title">Education</h2>
+
+<div class="education-card">
+<h3>Bachelor of Engineering (Computer Science)</h3>
+<p><strong>University:</strong> VTU</p>
+<p><strong>Year:</strong> 2022 - 2026</p>
+<p>Focused on Software Development, Database Management, Web Technologies and Programming.</p>
+</div>
+</section>
+
+<!-- Skills -->
+<section id="skills">
+<h2 class="section-title">Skills</h2>
+
+<div class="skills-grid">
+
+<div class="skill-card">Python</div>
+<div class="skill-card">Django</div>
+<div class="skill-card">Java</div>
+<div class="skill-card">HTML5</div>
+<div class="skill-card">CSS3</div>
+<div class="skill-card">JavaScript</div>
+<div class="skill-card">MySQL</div>
+<div class="skill-card">Git & GitHub</div>
+
+</div>
+</section>
+
+<!-- Projects -->
+<section id="projects">
+<h2 class="section-title">Projects</h2>
+
+<div class="project-grid">
+
+<div class="project-card">
+<h3>Smart Hotel Management System</h3>
+<br>
+<p>
+Developed using Python, Django, HTML, CSS, JavaScript and MySQL.
+Features include room booking, customer management, room availability,
+booking history, and admin dashboard.
+</p>
+</div>
+
+<div class="project-card">
+<h3>Personal Portfolio Website</h3>
+<br>
+<p>
+Designed and developed a fully responsive personal portfolio website
+to showcase skills, achievements and projects.
+</p>
+</div>
+
+<div class="project-card">
+<h3>Student Management System</h3>
+<br>
+<p>
+Developed a CRUD-based web application for managing student records
+efficiently using database integration.
+</p>
+</div>
+
+</div>
+</section>
+
+<!-- Certifications -->
+<section id="certifications">
+<h2 class="section-title">Certifications</h2>
+
+<div class="cert-grid">
+
+<div class="cert-card">
+<h3>Python Programming</h3>
+<p>Completed certification in Python Programming.</p>
+</div>
+
+<div class="cert-card">
+<h3>Java Programming</h3>
+<p>Completed certification in Java Programming.</p>
+</div>
+
+<div class="cert-card">
+<h3>Web Development</h3>
+<p>Completed certification in HTML, CSS and JavaScript.</p>
+</div>
+
+<div class="cert-card">
+<h3>Internship Certificate</h3>
+<p>Successfully completed internship training program.</p>
+</div>
+
+</div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+<h2 class="section-title">Contact Me</h2>
+
+<div class="contact">
+<p>📧 Email: manasaningaraju88@gmail.com</p>
+<p>📱 Phone: +91 8904350172</p>
+<p>📍 mysore, Karnataka, India</p>
+<p>💻 GitHub: https://github.com/Manasaningaraju</p>
+<p>🔗 LinkedIn: https://www.linkedin.com/in/manasa-an-948566352?utm_source=share_via&utm_content=profile&utm_medium=member_android</p>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Manasa A N | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
